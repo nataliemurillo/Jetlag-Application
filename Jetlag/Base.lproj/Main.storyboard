@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wyx-hP-IZF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jetlag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="sUa-d5-xsB">
+                                <rect key="frame" x="37" y="133" width="300" height="201.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jetlag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUx-h1-P8V">
+                                        <rect key="frame" x="98" y="0.0" width="104" height="49.5"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="41"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make the most out of your vacation by sleeping on time." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Np1-Kq-9nX">
+                                        <rect key="frame" x="0.0" y="79.5" width="300" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="tcg-0d-QBI"/>
+                                            <constraint firstAttribute="height" constant="50" id="v7x-ns-4rP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFX-Uc-2Sk">
+                                        <rect key="frame" x="117.5" y="159.5" width="65" height="42"/>
+                                        <color key="backgroundColor" red="0.85098039219999999" green="0.3921568627" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="65" id="6kI-r3-9z8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="24"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextButtonTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4qQ-MT-gqF"/>
+                                            <segue destination="MkH-3k-0zj" kind="show" id="IXH-lk-eea"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YFX-Uc-2Sk" firstAttribute="centerX" secondItem="sUa-d5-xsB" secondAttribute="centerX" id="1xP-0m-fTL"/>
+                                    <constraint firstItem="Np1-Kq-9nX" firstAttribute="centerX" secondItem="sUa-d5-xsB" secondAttribute="centerX" id="jdb-s0-sLn"/>
+                                    <constraint firstItem="SUx-h1-P8V" firstAttribute="centerX" secondItem="sUa-d5-xsB" secondAttribute="centerX" id="wMe-Lp-OlZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sUa-d5-xsB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Y2-Hf-95A"/>
+                            <constraint firstItem="sUa-d5-xsB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="69" id="Yv7-uT-x7I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MWT-UQ-H7J"/>
+                    <connections>
+                        <outlet property="nextButton" destination="YFX-Uc-2Sk" id="HfP-J7-yiT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79" y="113"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Zu-q9-OuD">
+            <objects>
+                <navigationController id="wyx-hP-IZF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q5A-Bm-exF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AsP-Bq-d66"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="js7-qG-UjG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-895" y="113"/>
+        </scene>
+        <!--Direct Flight View Controller-->
+        <scene sceneID="XUO-Bw-M5M">
+            <objects>
+                <viewController id="MkH-3k-0zj" customClass="DirectFlightViewController" customModule="Jetlag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4dw-CP-kaO"/>
+                        <viewControllerLayoutGuide type="bottom" id="xZK-eC-PJj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u0S-eH-SMS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="YCk-ka-ObC">
+                                <rect key="frame" x="57" y="228" width="260" height="210"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is This A Direct Flight?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbI-gL-UxR">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MQp-5z-gw2">
+                                        <rect key="frame" x="93" y="90" width="74" height="29"/>
+                                        <segments>
+                                            <segment title="Yes"/>
+                                            <segment title="No"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxT-w4-2QS">
+                                        <rect key="frame" x="97" y="178" width="66" height="32"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Continue">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="continueButtonTapped:" destination="MkH-3k-0zj" eventType="touchUpInside" id="iLz-Vw-VDf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pxT-w4-2QS" firstAttribute="leading" secondItem="YCk-ka-ObC" secondAttribute="leading" constant="97" id="X75-bA-IuY"/>
+                                    <constraint firstItem="MQp-5z-gw2" firstAttribute="leading" secondItem="YCk-ka-ObC" secondAttribute="leading" constant="93" id="jcI-wq-DQe"/>
+                                    <constraint firstItem="qbI-gL-UxR" firstAttribute="leading" secondItem="YCk-ka-ObC" secondAttribute="leading" id="txp-go-Fig"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YCk-ka-ObC" firstAttribute="leading" secondItem="u0S-eH-SMS" secondAttribute="leadingMargin" constant="52" id="Mhn-CM-FoI"/>
+                            <constraint firstItem="YCk-ka-ObC" firstAttribute="top" secondItem="4dw-CP-kaO" secondAttribute="bottom" constant="149" id="am4-74-Bhb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="pxT-w4-2QS" id="GHB-bd-ynw"/>
+                        <outlet property="typeOfFlight" destination="MQp-5z-gw2" id="F3F-ZB-60t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQX-re-PrM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="113"/>
+        </scene>
+        <!--Selected Lay Over Flight View Controller-->
+        <scene sceneID="AFT-Dh-3X3">
+            <objects>
+                <viewController storyboardIdentifier="layoverFlight" id="Jlh-Oo-a61" customClass="SelectedLayOverFlightViewController" customModule="Jetlag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tcd-1d-Ugc"/>
+                        <viewControllerLayoutGuide type="bottom" id="86Z-xU-a93"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vAX-kx-WmY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mFx-JQ-Mdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634" y="430"/>
+        </scene>
+        <!--Selected Direct Flight View Controller-->
+        <scene sceneID="ihK-ha-p0a">
+            <objects>
+                <viewController storyboardIdentifier="directFlight" id="Uu4-bB-RMl" customClass="SelectedDirectFlightViewController" customModule="Jetlag" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F1i-I9-SsF"/>
+                        <viewControllerLayoutGuide type="bottom" id="PFA-bR-Y4J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2en-oh-m8k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t3T-VC-pu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634" y="-290"/>
+        </scene>
+    </scenes>
+</document>
